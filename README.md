@@ -23,7 +23,7 @@
 </a>
 </p>
 
-<p align="center"><img src="./src/images/github-profile-readme-generator.gif" alt="github-profile-readme-generator gif" /></p>
+<p align="center"><img src="https://www.arkademy.com/img/logo%20arkademy.1c82cf5c.svg" alt="github-profile-readme-generator gif" /></p>
 
 <p align="center">
     <a href="https://rahuldkjain.github.io/gh-profile-readme-generator" target="blank">View Demo</a>
