@@ -2,14 +2,13 @@
   Introduction Restfull Api with Express
 </h1>
 
-<p align="center"><img src="https://www.arkademy.com/img/logo%20arkademy.1c82cf5c.svg" width="400px" alt="Arkademylogo.svg" /></p>
+<p align="center"><img src="https://www.arkademy.com/img/logo%20arkademy.1c82cf5c.svg" width="500px" alt="Arkademylogo.svg" /></p>
 
 <p align="center">
     <a href="https://www.arkademy.com/" target="blank">Our Website</a>
     ·
     <a href="https://www.arkademy.com/auth/signup">Join With Us</a>
     ·
-    <a href="https://arkademy.com/hire/">Need Developer ? </a>
 </p>
 
 ## 🛠️ Installation Steps
