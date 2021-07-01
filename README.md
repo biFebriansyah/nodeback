@@ -78,5 +78,5 @@ npm start
 
 <hr>
 <p align="center">
-Developed with ❤️ in Indonesia
+Developed with ❤️ in 	🇮🇩 Indonesia
 </p>
