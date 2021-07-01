@@ -54,22 +54,16 @@ This tool provides an easy way to create a GitHub profile readme with the latest
 1. Clone the repository
 
 ```bash
-git clone https://github.com/rahuldkjain/github-profile-readme-generator.git
+git clone https://github.com/biFebriansyah/backend-beginner.git
 ```
 
-2. Change the working directory
-
-```bash
-cd github-profile-readme-generator
-```
-
-3. Install dependencies
+2. Install dependencies
 
 ```bash
 npm install
 ```
 
-4. Run the app
+3. Run the app
 
 ```bash
 npm start
