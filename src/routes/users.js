@@ -1,12 +1,9 @@
 const express = require("express")
 const routing = express.Router()
+const ctrl = require("../controllers/users")
+const validate = require("../middleware/validate")
 
-routing.get("/", (req, res) => {
-    res.send("Hallo from users service")
-})
-
-routing.get("/getAll", (req, res) => {
-    res.send("Get all data users")
-})
+routing.get("/", validate("admin"), ctrl.getAll)
+routing.post("/", ctrl.addData)
 
 module.exports = routing

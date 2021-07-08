@@ -1,4 +1,4 @@
-function respon(res, status, result = "") {
+function respon(res, status, result = "", err = false) {
     let desc = ""
 
     switch (status) {
@@ -31,11 +31,29 @@ function respon(res, status, result = "") {
         return !!data && data.constructor === Object
     }
 
-    const results = {
-        status: status,
-        description: desc,
-        isError: false,
-        data: isObject(result) ? [result] : Array.isArray(result) ? result : result,
+    const isString = (data) => {
+        if (typeof data == "string") {
+            return true
+        } else {
+            return false
+        }
+    }
+
+    const results = {}
+
+    if (err == true) {
+        results.status = status
+        results.description = desc
+        results.isError = true
+        results.result = isObject(result) ? [result] : Array.isArray(result) ? result : result
+    } else {
+        results.status = status
+        results.description = desc
+        results.result = isObject(result) ? [result] : Array.isArray(result) ? result : result
+    }
+
+    if (isString(result)) {
+        results.result = { msg: result }
     }
 
     res.status(status).json(results)

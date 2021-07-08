@@ -1,9 +1,9 @@
 const db = require("../configs/db")
-const products = {}
+const users = {}
 
-products.getAll = () => {
+users.getAll = () => {
     return new Promise((resolve, reject) => {
-        db.query("SELECT * FROM public.product ORDER BY id DESC")
+        db.query("SELECT * FROM public.users ORDER BY id DESC")
             .then((res) => {
                 resolve(res.rows)
             })
@@ -13,27 +13,29 @@ products.getAll = () => {
     })
 }
 
-products.addData = (data) => {
+users.addData = (data) => {
+    console.log(data)
     return new Promise((resolve, reject) => {
-        db.query("INSERT INTO product (name, price, image) VALUES ($1, $2, $3)", [
+        db.query(`INSERT INTO public.users ("name", username, "password") VALUES($1, $2, $3)`, [
             data.name,
-            data.price,
-            data.fimage,
+            data.username,
+            data.password,
         ])
             .then((res) => {
                 resolve(data)
             })
             .catch((err) => {
+                console.log(err)
                 reject(err)
             })
     })
 }
 
-products.rmData = (id) => {
+users.getbyUsername = (username) => {
     return new Promise((resolve, reject) => {
-        db.query(`DELETE FROM public.product WHERE id = ${id}`)
+        db.query(`SELECT * FROM public.users WHERE username='${username}'`)
             .then((res) => {
-                resolve(res)
+                resolve(res.rows)
             })
             .catch((err) => {
                 reject(err)
@@ -41,4 +43,4 @@ products.rmData = (id) => {
     })
 }
 
-module.exports = products
+module.exports = users
