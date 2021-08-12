@@ -1,46 +1,79 @@
-const db = require("../configs/db")
-const users = {}
+const { orm } = require("../configs/db")
+const { DataTypes } = require("sequelize")
 
-users.getAll = () => {
-    return new Promise((resolve, reject) => {
-        db.query("SELECT * FROM public.users ORDER BY id DESC")
-            .then((res) => {
-                resolve(res.rows)
-            })
-            .catch((err) => {
-                reject(err)
-            })
-    })
+class Users {
+    constructor() {
+        this.table = orm.define("users", {
+            id: {
+                type: DataTypes.INTEGER,
+                allowNull: false,
+                autoIncrement: true,
+                primaryKey: true,
+            },
+            name: {
+                type: DataTypes.STRING,
+                allowNull: false,
+            },
+            username: {
+                type: DataTypes.STRING,
+                allowNull: false,
+            },
+            email: {
+                type: DataTypes.STRING,
+                allowNull: false,
+            },
+            password: {
+                type: DataTypes.STRING,
+                allowNull: false,
+            },
+        })
+    }
+
+    Save(data) {
+        return new Promise((resolve, reject) => {
+            this.table
+                .create(data)
+                .then((res) => {
+                    resolve(res.toJSON())
+                })
+                .catch((err) => {
+                    reject(err)
+                })
+        })
+    }
+
+    GetAll() {
+        return new Promise((resolve, reject) => {
+            this.table
+                .findAll({
+                    order: [["createdAt", "DESC"]],
+                })
+                .then((res) => {
+                    resolve(res)
+                })
+                .catch((err) => {
+                    reject(err)
+                })
+        })
+    }
+
+    getbyUsername(username) {
+        return new Promise((resolve, reject) => {
+            this.table
+                .findAll({
+                    order: [["createdAt", "DESC"]],
+                    where: {
+                        username,
+                    },
+                })
+                .then((res) => {
+                    resolve(res)
+                })
+                .catch((err) => {
+                    reject(err)
+                })
+        })
+    }
 }
 
-users.addData = (data) => {
-    console.log(data)
-    return new Promise((resolve, reject) => {
-        db.query(`INSERT INTO public.users ("name", username, "password") VALUES($1, $2, $3)`, [
-            data.name,
-            data.username,
-            data.password,
-        ])
-            .then((res) => {
-                resolve(data)
-            })
-            .catch((err) => {
-                console.log(err)
-                reject(err)
-            })
-    })
-}
-
-users.getbyUsername = (username) => {
-    return new Promise((resolve, reject) => {
-        db.query(`SELECT * FROM public.users WHERE username='${username}'`)
-            .then((res) => {
-                resolve(res.rows)
-            })
-            .catch((err) => {
-                reject(err)
-            })
-    })
-}
-
-module.exports = users
+module.exports = new Users()

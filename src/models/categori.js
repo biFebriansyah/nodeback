@@ -1,40 +1,19 @@
 const { orm } = require("../configs/db")
 const { DataTypes } = require("sequelize")
-const categori = require("./categori")
 
-class Products {
+class Categori {
     constructor() {
-        this.table = orm.define("products", {
+        this.table = orm.define("categoris", {
             id: {
                 type: DataTypes.INTEGER,
                 allowNull: false,
                 autoIncrement: true,
                 primaryKey: true,
             },
-            name_product: {
+            name_categori: {
                 type: DataTypes.STRING,
                 allowNull: false,
             },
-            price_product: {
-                type: DataTypes.STRING,
-                allowNull: false,
-            },
-            image_product: {
-                type: DataTypes.STRING,
-                allowNull: true,
-            },
-            id_categori: {
-                type: DataTypes.INTEGER,
-                allowNull: false,
-                references: {
-                    model: "categoris",
-                    key: "id",
-                },
-            },
-        })
-        this.table.belongsTo(categori.table, {
-            foreignKey: "id_categori",
-            as: "categoris",
         })
     }
 
@@ -55,17 +34,16 @@ class Products {
         return new Promise((resolve, reject) => {
             this.table
                 .findAll({
-                    include: [{ model: categori.table, as: "categoris" }],
+                    order: [["createdAt", "DESC"]],
                 })
                 .then((res) => {
                     resolve(res)
                 })
                 .catch((err) => {
-                    console.log(err)
                     reject(err)
                 })
         })
     }
 }
 
-module.exports = new Products()
+module.exports = new Categori()

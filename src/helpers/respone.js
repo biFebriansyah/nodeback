@@ -56,7 +56,7 @@ function respon(res, status, result = "", err = false) {
         results.result = { msg: result }
     }
 
-    res.status(status).json(results)
+    return res.status(status).json(results)
 }
 
 module.exports = respon

@@ -1,0 +1,15 @@
+2021-07-12 19:39:10:3910 [31merror[39m: [31mCoba winston[39m
+2021-07-15 10:01:25:125 [31merror[39m: [31mDependency name must be given as a not empty string[39m
+2021-07-15 10:02:51:251 [31merror[39m: [31mDependency name must be given as a not empty string[39m
+2021-07-15 10:03:12:312 [31merror[39m: [31mDependency name must be given as a not empty string[39m
+2021-07-15 10:03:22:322 [31merror[39m: [31mDependency name must be given as a not empty string[39m
+2021-07-15 10:03:43:343 [31merror[39m: [31mDependency name must be given as a not empty string[39m
+2021-07-15 10:04:49:449 [31merror[39m: [31mDependency name must be given as a not empty string[39m
+2021-07-15 10:08:08:88 [31merror[39m: [31mDependency name must be given as a not empty string[39m
+2021-07-15 10:10:09:109 [31merror[39m: [31mcolumn "id_categori" of relation "products" contains null values[39m
+2021-08-05 08:25:50:2550 [31merror[39m: [31mdb.query is not a function[39m
+2021-08-05 08:26:36:2636 [31merror[39m: [31mrelation "public.users" does not exist[39m
+2021-08-05 08:30:54:3054 [31merror[39m: [31mmodel.getbyUsername is not a function[39m
+2021-08-05 08:34:10:3410 [31merror[39m: [31mmodel.addData is not a function[39m
+2021-08-05 09:00:25:025 [31merror[39m: [31mmodel.getAll is not a function[39m
+2021-08-05 09:01:12:112 [31merror[39m: [31mcolumn users.DESC does not exist[39m
