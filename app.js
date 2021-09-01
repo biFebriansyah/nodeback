@@ -9,7 +9,7 @@ server.use(cors())
 server.use(morganMidle)
 server.use(express.json())
 server.use(express.urlencoded({ extended: true }))
-server.use("/public", express.static("public"))
-server.use(main)
+
+server.use("/api", main)
 
 module.exports = server

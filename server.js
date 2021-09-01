@@ -9,7 +9,6 @@ async function init() {
         await database.authenticate()
         await database.sync({ alter: true })
         await redis.check()
-        global.coba = "ebiebie"
         server.listen(PORT, () => {
             Logger.info("Database connected")
             Logger.info("Redis connected")
