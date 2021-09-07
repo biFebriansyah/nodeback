@@ -16,7 +16,6 @@ const skip = () => {
 // Build the morgan middleware
 const morganMiddleware = morgan(":method :url :status :res[content-length] - :response-time ms", {
     stream: new MyStream(),
-    skip,
 })
 
 module.exports = morganMiddleware

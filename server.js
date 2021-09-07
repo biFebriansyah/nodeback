@@ -7,7 +7,7 @@ const PORT = 9000
 async function init() {
     try {
         await database.authenticate()
-        await database.sync({ alter: true })
+        await database.sync()
         await redis.check()
         server.listen(PORT, () => {
             Logger.info("Database connected")
@@ -15,8 +15,7 @@ async function init() {
             Logger.info(`Service running on port ${PORT}`)
         })
     } catch (error) {
-        Logger.error(error.message)
-        process.exit(1)
+        Logger.error(error)
     }
 }
 

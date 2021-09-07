@@ -2,12 +2,14 @@ const products = {}
 const model = require("../models/products")
 const respone = require("../helpers/respone")
 const uploads = require("../helpers/uploadCloud")
+const Logger = require("../helpers/logger")
 
 products.getAll = async (_, res) => {
     try {
         const result = await model.GetAll()
         return respone(res, 200, result)
     } catch (error) {
+        Logger.error(error)
         return respone(res, 500, error, true)
     }
 }
@@ -29,7 +31,7 @@ products.addData = async (req, res) => {
         const result = await model.Save(data)
         return respone(res, 200, result)
     } catch (error) {
-        console.log(error)
+        Logger.error(error)
         return respone(res, 500, error, true)
     }
 }
