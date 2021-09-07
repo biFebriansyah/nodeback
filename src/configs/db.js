@@ -1,6 +1,10 @@
 const { Pool } = require("pg")
 const { Sequelize } = require("sequelize")
 
+if (process.env.NODE_ENV === "test") {
+    require("dotenv").config()
+}
+
 const pool = new Pool({
     user: process.env.DB_USERS,
     host: process.env.DB_HOST,

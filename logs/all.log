@@ -8,3 +8,206 @@
 2021-09-01 12:55:01:551 [32minfo[39m: [32mDatabase connected[39m
 2021-09-01 12:55:01:551 [32minfo[39m: [32mRedis connected[39m
 2021-09-01 12:55:01:551 [32minfo[39m: [32mService running on port 9000[39m
+2021-09-07 12:38:18:3818 [31merror[39m: [31mpassword authentication failed for user "by"[39m
+2021-09-07 12:38:29:3829 [31merror[39m: [31mpassword authentication failed for user "by"[39m
+2021-09-07 12:39:28:3928 [31merror[39m: [31mpassword authentication failed for user "by"[39m
+2021-09-07 12:39:52:3952 [31merror[39m: [31mpassword authentication failed for user "by"[39m
+2021-09-07 12:40:26:4026 [31merror[39m: [31mpassword authentication failed for user "by"[39m
+2021-09-07 12:40:31:4031 [31merror[39m: [31mpassword authentication failed for user "by"[39m
+2021-09-07 12:41:14:4114 [31merror[39m: [31mpassword authentication failed for user "by"[39m
+2021-09-07 12:41:24:4124 [31merror[39m: [31mpassword authentication failed for user "by"[39m
+2021-09-07 12:41:26:4126 [31merror[39m: [31mpassword authentication failed for user "by"[39m
+2021-09-07 12:41:43:4143 [31merror[39m: [31mpassword authentication failed for user "by"[39m
+2021-09-07 12:42:44:4244 [31merror[39m: [31mpassword authentication failed for user "by"[39m
+2021-09-07 13:04:42:442 [31merror[39m: [31mpassword authentication failed for user "by"[39m
+2021-09-07 13:04:42:442 [31merror[39m: [31mpassword authentication failed for user "by"[39m
+2021-09-07 13:04:42:442 [31merror[39m: [31mpassword authentication failed for user "by"[39m
+2021-09-07 13:04:43:443 [31merror[39m: [31mpassword authentication failed for user "by"[39m
+2021-09-07 13:04:43:443 [31merror[39m: [31mpassword authentication failed for user "by"[39m
+2021-09-07 13:04:51:451 [31merror[39m: [31mpassword authentication failed for user "by"[39m
+2021-09-07 13:04:51:451 [31merror[39m: [31mpassword authentication failed for user "by"[39m
+2021-09-07 13:04:51:451 [31merror[39m: [31mpassword authentication failed for user "by"[39m
+2021-09-07 13:04:52:452 [31merror[39m: [31mpassword authentication failed for user "by"[39m
+2021-09-07 13:04:52:452 [31merror[39m: [31mpassword authentication failed for user "by"[39m
+2021-09-07 13:05:31:531 [31merror[39m: [31mpassword authentication failed for user "by"[39m
+2021-09-07 13:05:31:531 [31merror[39m: [31mpassword authentication failed for user "by"[39m
+2021-09-07 13:05:31:531 [31merror[39m: [31mpassword authentication failed for user "by"[39m
+2021-09-07 13:05:31:531 [31merror[39m: [31mpassword authentication failed for user "by"[39m
+2021-09-07 13:05:31:531 [31merror[39m: [31mpassword authentication failed for user "by"[39m
+2021-09-07 13:05:45:545 [31merror[39m: [31mpassword authentication failed for user "by"[39m
+2021-09-07 13:05:51:551 [31merror[39m: [31mpassword authentication failed for user "by"[39m
+2021-09-07 13:05:51:551 [31merror[39m: [31mpassword authentication failed for user "by"[39m
+2021-09-07 13:05:51:551 [31merror[39m: [31mpassword authentication failed for user "by"[39m
+2021-09-07 13:05:51:551 [31merror[39m: [31mpassword authentication failed for user "by"[39m
+2021-09-07 13:05:51:551 [31merror[39m: [31mpassword authentication failed for user "by"[39m
+2021-09-07 13:06:02:62 [31merror[39m: [31mpassword authentication failed for user "by"[39m
+2021-09-07 13:06:02:62 [31merror[39m: [31mpassword authentication failed for user "by"[39m
+2021-09-07 13:06:02:62 [31merror[39m: [31mpassword authentication failed for user "by"[39m
+2021-09-07 13:06:02:62 [31merror[39m: [31mpassword authentication failed for user "by"[39m
+2021-09-07 13:06:02:62 [31merror[39m: [31mpassword authentication failed for user "by"[39m
+2021-09-07 13:06:14:614 [31merror[39m: [31mpassword authentication failed for user "by"[39m
+2021-09-07 13:06:22:622 [31merror[39m: [31mpassword authentication failed for user "by"[39m
+2021-09-07 13:06:38:638 [31merror[39m: [31mpassword authentication failed for user "by"[39m
+2021-09-07 13:06:38:638 [31merror[39m: [31mpassword authentication failed for user "by"[39m
+2021-09-07 13:06:38:638 [31merror[39m: [31mpassword authentication failed for user "by"[39m
+2021-09-07 13:06:38:638 [31merror[39m: [31mpassword authentication failed for user "by"[39m
+2021-09-07 13:06:38:638 [31merror[39m: [31mpassword authentication failed for user "by"[39m
+2021-09-07 13:07:25:725 [31merror[39m: [31mpassword authentication failed for user "by"[39m
+2021-09-07 13:07:25:725 [31merror[39m: [31mpassword authentication failed for user "by"[39m
+2021-09-07 13:07:25:725 [31merror[39m: [31mpassword authentication failed for user "by"[39m
+2021-09-07 13:07:25:725 [31merror[39m: [31mpassword authentication failed for user "by"[39m
+2021-09-07 13:07:25:725 [31merror[39m: [31mpassword authentication failed for user "by"[39m
+2021-09-07 13:08:55:855 [32minfo[39m: [32mDatabase connected[39m
+2021-09-07 13:08:55:855 [32minfo[39m: [32mRedis connected[39m
+2021-09-07 13:08:55:855 [32minfo[39m: [32mService running on port 9000[39m
+2021-09-07 13:10:25:1025 [32minfo[39m: [32mDatabase connected[39m
+2021-09-07 13:10:25:1025 [32minfo[39m: [32mRedis connected[39m
+2021-09-07 13:10:25:1025 [32minfo[39m: [32mService running on port 9000[39m
+2021-09-07 13:12:22:1222 [32minfo[39m: [32mDatabase connected[39m
+2021-09-07 13:12:22:1222 [32minfo[39m: [32mRedis connected[39m
+2021-09-07 13:12:22:1222 [32minfo[39m: [32mService running on port 9000[39m
+2021-09-07 13:12:49:1249 [32minfo[39m: [32mDatabase connected[39m
+2021-09-07 13:12:49:1249 [32minfo[39m: [32mRedis connected[39m
+2021-09-07 13:12:49:1249 [32minfo[39m: [32mService running on port 9000[39m
+2021-09-07 13:14:31:1431 [32minfo[39m: [32mDatabase connected[39m
+2021-09-07 13:14:31:1431 [32minfo[39m: [32mRedis connected[39m
+2021-09-07 13:14:31:1431 [32minfo[39m: [32mService running on port 9000[39m
+2021-09-07 13:14:51:1451 [32minfo[39m: [32mDatabase connected[39m
+2021-09-07 13:14:51:1451 [32minfo[39m: [32mRedis connected[39m
+2021-09-07 13:14:51:1451 [32minfo[39m: [32mService running on port 9000[39m
+2021-09-07 13:15:16:1516 [32minfo[39m: [32mDatabase connected[39m
+2021-09-07 13:15:16:1516 [32minfo[39m: [32mRedis connected[39m
+2021-09-07 13:15:16:1516 [32minfo[39m: [32mService running on port 9000[39m
+2021-09-07 13:17:28:1728 [32minfo[39m: [32mDatabase connected[39m
+2021-09-07 13:17:28:1728 [32minfo[39m: [32mRedis connected[39m
+2021-09-07 13:17:28:1728 [32minfo[39m: [32mService running on port 9000[39m
+2021-09-07 13:19:02:192 [32minfo[39m: [32mDatabase connected[39m
+2021-09-07 13:19:02:192 [32minfo[39m: [32mRedis connected[39m
+2021-09-07 13:19:02:192 [32minfo[39m: [32mService running on port 9000[39m
+2021-09-07 13:19:34:1934 [32minfo[39m: [32mDatabase connected[39m
+2021-09-07 13:19:34:1934 [32minfo[39m: [32mRedis connected[39m
+2021-09-07 13:19:34:1934 [32minfo[39m: [32mService running on port 9000[39m
+2021-09-07 13:19:38:1938 [31merror[39m: [31mpassword authentication failed for user "by"[39m
+2021-09-07 13:20:02:202 [32minfo[39m: [32mDatabase connected[39m
+2021-09-07 13:20:02:202 [32minfo[39m: [32mRedis connected[39m
+2021-09-07 13:20:02:202 [32minfo[39m: [32mService running on port 9000[39m
+2021-09-07 13:21:34:2134 [31merror[39m: [31mpassword authentication failed for user "by"[39m
+2021-09-07 13:21:34:2134 [31merror[39m: [31mpassword authentication failed for user "by"[39m
+2021-09-07 13:21:34:2134 [31merror[39m: [31mpassword authentication failed for user "by"[39m
+2021-09-07 13:21:34:2134 [31merror[39m: [31mpassword authentication failed for user "by"[39m
+2021-09-07 13:21:43:2143 [31merror[39m: [31mpassword authentication failed for user "by"[39m
+2021-09-07 13:23:44:2344 [31merror[39m: [31mpassword authentication failed for user "by"[39m
+2021-09-07 13:23:44:2344 [31merror[39m: [31mpassword authentication failed for user "by"[39m
+2021-09-07 13:23:44:2344 [31merror[39m: [31mpassword authentication failed for user "by"[39m
+2021-09-07 13:23:44:2344 [31merror[39m: [31mpassword authentication failed for user "by"[39m
+2021-09-07 13:23:44:2344 [31merror[39m: [31mpassword authentication failed for user "by"[39m
+2021-09-07 13:24:03:243 [32minfo[39m: [32mDatabase connected[39m
+2021-09-07 13:24:03:243 [32minfo[39m: [32mRedis connected[39m
+2021-09-07 13:24:03:243 [32minfo[39m: [32mService running on port 9000[39m
+2021-09-07 13:25:11:2511 [31merror[39m: [31mpassword authentication failed for user "by"[39m
+2021-09-07 13:25:11:2511 [31merror[39m: [31mpassword authentication failed for user "by"[39m
+2021-09-07 13:25:12:2512 [31merror[39m: [31mpassword authentication failed for user "by"[39m
+2021-09-07 13:25:12:2512 [31merror[39m: [31mpassword authentication failed for user "by"[39m
+2021-09-07 13:25:12:2512 [31merror[39m: [31mpassword authentication failed for user "by"[39m
+2021-09-07 13:25:41:2541 [31merror[39m: [31mpassword authentication failed for user "by"[39m
+2021-09-07 13:25:41:2541 [31merror[39m: [31mpassword authentication failed for user "by"[39m
+2021-09-07 13:25:41:2541 [31merror[39m: [31mpassword authentication failed for user "by"[39m
+2021-09-07 13:25:41:2541 [31merror[39m: [31mpassword authentication failed for user "by"[39m
+2021-09-07 13:25:41:2541 [31merror[39m: [31mpassword authentication failed for user "by"[39m
+2021-09-07 13:26:10:2610 [32minfo[39m: [32mDatabase connected[39m
+2021-09-07 13:26:10:2610 [32minfo[39m: [32mRedis connected[39m
+2021-09-07 13:26:10:2610 [32minfo[39m: [32mService running on port 9000[39m
+2021-09-07 13:27:24:2724 [32minfo[39m: [32mDatabase connected[39m
+2021-09-07 13:27:24:2724 [32minfo[39m: [32mRedis connected[39m
+2021-09-07 13:27:24:2724 [32minfo[39m: [32mService running on port 9000[39m
+2021-09-07 13:28:22:2822 [32minfo[39m: [32mDatabase connected[39m
+2021-09-07 13:28:22:2822 [32minfo[39m: [32mRedis connected[39m
+2021-09-07 13:28:22:2822 [32minfo[39m: [32mService running on port 9000[39m
+2021-09-07 13:28:44:2844 [32minfo[39m: [32mDatabase connected[39m
+2021-09-07 13:28:44:2844 [32minfo[39m: [32mRedis connected[39m
+2021-09-07 13:28:44:2844 [32minfo[39m: [32mService running on port 9000[39m
+2021-09-07 13:29:03:293 [31merror[39m: [31mpassword authentication failed for user "by"[39m
+2021-09-07 13:29:03:293 [31merror[39m: [31mpassword authentication failed for user "by"[39m
+2021-09-07 13:30:16:3016 [32minfo[39m: [32mDatabase connected[39m
+2021-09-07 13:30:16:3016 [32minfo[39m: [32mRedis connected[39m
+2021-09-07 13:30:16:3016 [32minfo[39m: [32mService running on port 9000[39m
+2021-09-07 13:30:28:3028 [31merror[39m: [31mpassword authentication failed for user "by"[39m
+2021-09-07 13:30:28:3028 [31merror[39m: [31mpassword authentication failed for user "by"[39m
+2021-09-07 13:30:51:3051 [32minfo[39m: [32mDatabase connected[39m
+2021-09-07 13:30:51:3051 [32minfo[39m: [32mRedis connected[39m
+2021-09-07 13:30:51:3051 [32minfo[39m: [32mService running on port 9000[39m
+2021-09-07 13:30:58:3058 [31merror[39m: [31mpassword authentication failed for user "by"[39m
+2021-09-07 13:30:58:3058 [31merror[39m: [31mpassword authentication failed for user "by"[39m
+2021-09-07 13:31:28:3128 [32minfo[39m: [32mDatabase connected[39m
+2021-09-07 13:31:28:3128 [32minfo[39m: [32mRedis connected[39m
+2021-09-07 13:31:28:3128 [32minfo[39m: [32mService running on port 9000[39m
+2021-09-07 13:31:35:3135 [31merror[39m: [31mpassword authentication failed for user "by"[39m
+2021-09-07 13:31:35:3135 [31merror[39m: [31mpassword authentication failed for user "by"[39m
+2021-09-07 13:31:59:3159 [32minfo[39m: [32mDatabase connected[39m
+2021-09-07 13:31:59:3159 [32minfo[39m: [32mRedis connected[39m
+2021-09-07 13:31:59:3159 [32minfo[39m: [32mService running on port 9000[39m
+2021-09-07 13:32:05:325 [31merror[39m: [31mpassword authentication failed for user "by"[39m
+2021-09-07 13:32:05:325 [31merror[39m: [31mpassword authentication failed for user "by"[39m
+2021-09-07 13:32:27:3227 [32minfo[39m: [32mDatabase connected[39m
+2021-09-07 13:32:27:3227 [32minfo[39m: [32mRedis connected[39m
+2021-09-07 13:32:27:3227 [32minfo[39m: [32mService running on port 9000[39m
+2021-09-07 13:37:36:3736 [31merror[39m: [31mCannot read property 'path' of undefined[39m
+2021-09-07 13:38:12:3812 [31merror[39m: [31mCannot read property 'path' of undefined[39m
+2021-09-07 13:38:49:3849 [31merror[39m: [31mCannot read property 'path' of undefined[39m
+2021-09-07 13:39:37:3937 [31merror[39m: [31mCannot read property 'path' of undefined[39m
+2021-09-07 13:40:21:4021 [31merror[39m: [31mCannot read property 'path' of undefined[39m
+2021-09-07 13:41:42:4142 [31merror[39m: [31mCannot read property 'path' of undefined[39m
+2021-09-07 13:42:13:4213 [32minfo[39m: [32mDatabase connected[39m
+2021-09-07 13:42:13:4213 [32minfo[39m: [32mRedis connected[39m
+2021-09-07 13:42:13:4213 [32minfo[39m: [32mService running on port 9000[39m
+2021-09-07 13:56:12:5612 [31merror[39m: [31mCannot read property 'path' of undefined[39m
+2021-09-07 22:09:44:944 [32minfo[39m: [32mDatabase connected[39m
+2021-09-07 22:09:44:944 [32minfo[39m: [32mRedis connected[39m
+2021-09-07 22:09:44:944 [32minfo[39m: [32mService running on port 9000[39m
+2021-09-07 22:09:56:956 [34mhttp[39m: [34mGET /products 404 147 - 4.314 ms[39m
+[34m[39m
+2021-09-07 22:10:07:107 [34mhttp[39m: [34mGET /api/products 404 17 - 5.448 ms[39m
+[34m[39m
+2021-09-07 22:10:31:1031 [34mhttp[39m: [34mGET /api/product/ 304 - - 31.062 ms[39m
+[34m[39m
+2021-09-07 22:10:40:1040 [34mhttp[39m: [34mGET /api/product/ 200 2076 - 6.954 ms[39m
+[34m[39m
+2021-09-07 22:14:31:1431 [34mhttp[39m: [34mPOST /api/product/ 401 74 - 20.798 ms[39m
+[34m[39m
+2021-09-07 22:14:38:1438 [34mhttp[39m: [34mPOST /api/product/ 401 74 - 2.177 ms[39m
+[34m[39m
+2021-09-07 22:15:36:1536 [34mhttp[39m: [34mPOST /api/product/ 400 957 - 3.017 ms[39m
+[34m[39m
+2021-09-07 22:15:53:1553 [34mhttp[39m: [34mPOST /api/product/ 400 957 - 1.249 ms[39m
+[34m[39m
+2021-09-07 22:15:57:1557 [32minfo[39m: [32mDatabase connected[39m
+2021-09-07 22:15:57:1557 [32minfo[39m: [32mRedis connected[39m
+2021-09-07 22:15:57:1557 [32minfo[39m: [32mService running on port 9000[39m
+2021-09-07 22:16:03:163 [34mhttp[39m: [34mPOST /api/product/ 401 74 - 20.342 ms[39m
+[34m[39m
+2021-09-07 22:17:05:175 [32minfo[39m: [32mDatabase connected[39m
+2021-09-07 22:17:05:175 [32minfo[39m: [32mRedis connected[39m
+2021-09-07 22:17:05:175 [32minfo[39m: [32mService running on port 9000[39m
+2021-09-07 22:17:07:177 [31merror[39m: [31mCannot read property 'path' of undefined[39m
+2021-09-07 22:17:07:177 [34mhttp[39m: [34mPOST /api/product/ 500 152 - 25.769 ms[39m
+[34m[39m
+2021-09-07 22:18:43:1843 [32minfo[39m: [32mDatabase connected[39m
+2021-09-07 22:18:43:1843 [32minfo[39m: [32mRedis connected[39m
+2021-09-07 22:18:43:1843 [32minfo[39m: [32mService running on port 9000[39m
+2021-09-07 22:18:45:1845 [31merror[39m: [31mCannot read property 'path' of undefined[39m
+2021-09-07 22:18:45:1845 [34mhttp[39m: [34mPOST /api/product/ 500 153 - 40.246 ms[39m
+[34m[39m
+2021-09-07 22:19:23:1923 [32minfo[39m: [32mDatabase connected[39m
+2021-09-07 22:19:23:1923 [32minfo[39m: [32mRedis connected[39m
+2021-09-07 22:19:23:1923 [32minfo[39m: [32mService running on port 9000[39m
+2021-09-07 22:19:28:1928 [31merror[39m: [31mCannot read property 'path' of undefined[39m
+2021-09-07 22:19:28:1928 [34mhttp[39m: [34mPOST /api/product/ 500 153 - 23.233 ms[39m
+[34m[39m
+2021-09-07 22:19:39:1939 [32minfo[39m: [32mDatabase connected[39m
+2021-09-07 22:19:39:1939 [32minfo[39m: [32mRedis connected[39m
+2021-09-07 22:19:39:1939 [32minfo[39m: [32mService running on port 9000[39m
+2021-09-07 22:22:54:2254 [32minfo[39m: [32mDatabase connected[39m
+2021-09-07 22:22:54:2254 [32minfo[39m: [32mRedis connected[39m
+2021-09-07 22:22:54:2254 [32minfo[39m: [32mService running on port 9000[39m
+2021-09-07 22:22:58:2258 [34mhttp[39m: [34mPOST /api/product/ 200 212 - 42.005 ms[39m
+[34m[39m

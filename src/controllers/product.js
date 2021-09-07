@@ -24,7 +24,7 @@ products.addData = async (req, res) => {
         const data = {
             name_product: req.body.name,
             price_product: req.body.price,
-            image_product: urlImage || req.file.path,
+            image_product: urlImage,
             id_categori: req.body.categori,
         }
 

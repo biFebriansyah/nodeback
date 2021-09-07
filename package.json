@@ -5,7 +5,8 @@
   "main": "app.js",
   "scripts": {
     "test": "NODE_ENV=test jest --verbose",
-    "start": "NODE_ENV=dev nodemon server.js"
+    "start": "NODE_ENV=dev nodemon server.js",
+    "serve": "NODE_ENV=prod nodemon server.js"
   },
   "keywords": [
     "express",

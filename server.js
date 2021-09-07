@@ -1,14 +1,24 @@
-const server = require("./app")
-const { orm: database } = require("./src/configs/db")
-const redis = require("./src/configs/redis")
+const dotenv = require("dotenv")
 const Logger = require("./src/helpers/logger")
 const PORT = 9000
 
+if (process.env.NODE_ENV === "dev") {
+    dotenv.config({ path: __dirname + "/.env.development" })
+}
+if (process.env.NODE_ENV === "prod") {
+    dotenv.config({ path: __dirname + "/.env.production" })
+}
+
+const { orm: database } = require("./src/configs/db")
+const redis = require("./src/configs/redis")
+const server = require("./app")
 async function init() {
     try {
         await database.authenticate()
         await database.sync()
-        await redis.check()
+        if (process.env.NODE_ENV !== "test") {
+            await redis.check()
+        }
         server.listen(PORT, () => {
             Logger.info("Database connected")
             Logger.info("Redis connected")
@@ -18,5 +28,4 @@ async function init() {
         Logger.error(error)
     }
 }
-
 init()

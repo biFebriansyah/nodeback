@@ -1,0 +1,8 @@
+POST http://localhost:9000/api/product/ HTTP/1.1
+content-type: application/json
+
+{
+    "name": "susu",
+    "price": 10000,
+    "categori": 1
+}
