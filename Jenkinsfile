@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     stages {
-        stage("Intall depdencies") {
+        stage("installing dependencies") {
             steps {
                 nodejs("nodejs") {
                     sh 'npm install'
@@ -10,7 +10,7 @@ pipeline {
             }
         }
 
-        stage("Testing") {
+        stage("Unit Testing") {
             steps {
                 nodejs("nodejs") {
                     sh 'npm test'

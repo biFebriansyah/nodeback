@@ -8,17 +8,6 @@ const standardRespone = {
 }
 
 describe("service /products", () => {
-    describe("GET /products", () => {
-        test("should return statuscode 200", async () => {
-            const respone = await request(app).get("/api/product")
-            expect(respone.statusCode).toBe(200)
-        })
-        test("should return with respone standar", async () => {
-            const respone = await request(app).get("/api/product")
-            expect(respone.body).toEqual(expect.objectContaining(standardRespone))
-        })
-    })
-
     describe("POST /products", () => {
         test("should return statuscode 200", async () => {
             const respone = await request(app).post("/api/product").send({
@@ -27,6 +16,16 @@ describe("service /products", () => {
                 categori: 1,
             })
             expect(respone.statusCode).toBe(200)
+        })
+    })
+    describe("GET /products", () => {
+        test("should return statuscode 200", async () => {
+            const respone = await request(app).get("/api/product")
+            expect(respone.statusCode).toBe(200)
+        })
+        test("should return with respone standar", async () => {
+            const respone = await request(app).get("/api/product")
+            expect(respone.body).toEqual(expect.objectContaining(standardRespone))
         })
     })
 })
