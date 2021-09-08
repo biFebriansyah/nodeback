@@ -1,3 +1,8 @@
+def builderImage
+def CommitHash
+def dockerhub = "bukanebi/backends"
+def image_name = "${dockerhub}:${BRANCH_NAME}"
+
 pipeline {
     agent any
 
@@ -14,6 +19,32 @@ pipeline {
             steps {
                 nodejs("nodejs") {
                     sh 'npm test'
+                }
+            }
+        }
+
+        stage("Build Image") {
+            steps {
+                script{
+                    builderImage = docker.build("${dockerhub}:${BRANCH_NAME}")          
+                }
+            }
+        }
+
+        stage("Test Images") {
+            steps {
+                script {
+                    builderImage.inside {
+                        sh 'echo passed'
+                    }
+                }
+            }
+        }
+
+        stage("Push Image") {
+            steps {
+                script {
+                    builderImage.push()
                 }
             }
         }
