@@ -211,3 +211,9 @@
 2021-09-07 22:22:54:2254 [32minfo[39m: [32mService running on port 9000[39m
 2021-09-07 22:22:58:2258 [34mhttp[39m: [34mPOST /api/product/ 200 212 - 42.005 ms[39m
 [34m[39m
+2021-09-08 14:08:05:85 [31merror[39m: [31mpassword authentication failed for user "devdb"[39m
+2021-09-08 14:08:05:85 [31merror[39m: [31mpassword authentication failed for user "devdb"[39m
+2021-09-08 14:08:06:86 [31merror[39m: [31mpassword authentication failed for user "devdb"[39m
+2021-09-08 14:08:23:823 [32minfo[39m: [32mDatabase connected[39m
+2021-09-08 14:08:23:823 [32minfo[39m: [32mRedis connected[39m
+2021-09-08 14:08:23:823 [32minfo[39m: [32mService running on port 9000[39m

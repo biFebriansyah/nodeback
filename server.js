@@ -15,7 +15,7 @@ const server = require("./app")
 async function init() {
     try {
         await database.authenticate()
-        await database.sync()
+        await database.sync({ alter: true })
         if (process.env.NODE_ENV !== "test") {
             await redis.check()
         }
