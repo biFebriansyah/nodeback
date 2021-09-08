@@ -49,8 +49,8 @@ pipeline {
         }
 
         stage("Deployments") {
-            steps {
-                sh "docker-compose up -d"
+            script{
+                builderImage.withRun(" -d --net devnet -p 9000:9000")       
             }
         }
     }
