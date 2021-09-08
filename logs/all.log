@@ -246,3 +246,6 @@
 2021-09-08 14:35:44:3544 [31merror[39m: [31mUnknown constraint error[39m
 2021-09-08 14:36:03:363 [31merror[39m: [31mnotNull Violation: categoris.name_categori cannot be null[39m
 2021-09-08 14:36:07:367 [31merror[39m: [31minsert or update on table "products" violates foreign key constraint "products_id_categori_fkey"[39m
+2021-09-08 18:58:44:5844 [32minfo[39m: [32mDatabase connected[39m
+2021-09-08 18:58:44:5844 [32minfo[39m: [32mRedis connected[39m
+2021-09-08 18:58:44:5844 [32minfo[39m: [32mService running on port 9000[39m

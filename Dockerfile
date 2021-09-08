@@ -8,6 +8,8 @@ RUN npm install
 
 COPY . .
 
+RUN npm install -g nodemon
+
 EXPOSE 9000
 
-CMD [ "node", "server.js" ]
+CMD [ "npm run", "serve" ]
