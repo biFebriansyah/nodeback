@@ -1,7 +1,6 @@
 def builderImage
 def CommitHash
 def dockerhub = "bukanebi/backends"
-def image_name = "${dockerhub}:${env.BRANCH_NAME}"
 
 pipeline {
     agent any
@@ -26,7 +25,7 @@ pipeline {
         stage("Build Image") {
             steps {
                 script{
-                    builderImage = docker.build("${dockerhub}:${env.BRANCH_NAME}")          
+                    builderImage = docker.build("${dockerhub}:devs")          
                 }
             }
         }
@@ -46,6 +45,12 @@ pipeline {
                 script {
                     builderImage.push()
                 }
+            }
+        }
+
+        stage("Deployments") {
+            steps {
+                sh "docker-compose up -d"
             }
         }
     }

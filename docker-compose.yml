@@ -1,21 +1,12 @@
 version: "3.9"
 services:
-    postgres:
-        container_name: database
-        image: postgres:latest
-        ports: 
-            - 5432:5432
-        environment:
-            - POSTGRES_PASSWORD=abcd1234
-            - POSTGRES_USER=devdb
-    redis:
-        container_name: redis
-        image: redis
-        ports: 
-            - 6379:6379
-        command: redis-server --requirepass yourpassword
-        environment:
-            - REDIS_PASSWORD=abcd1234
+    backends:
+        container_name: backends
+        image: bukanebi/backends:dev
+        ports:
+            - 9000-9002:9000
+        networks: 
+            - devnet
 
 networks:
     default:
