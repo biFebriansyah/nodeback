@@ -57,7 +57,7 @@ pipeline {
                                 verbose: false,
                                 transfers: [
                                     sshTransfer(
-                                        execCommand: "docker pull ${dockerhub}; docker kill backend; docker run -d --rm --name backend -p 9000:9000 ${image_name}",
+                                        execCommand: "docker pull ${dockerhub}; docker kill backend; docker run -d --rm --name backend -p 9000:9000 ${dockerhub}",
                                         execTimeout: 120000,
                                     )
                                 ]
