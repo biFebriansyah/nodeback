@@ -6,3 +6,11 @@ content-type: application/json
     "price": 10000,
     "categori": 1
 }
+
+###
+POST http://localhost:9000/api/categori/ HTTP/1.1
+content-type: application/json
+
+{
+    "name_categori": "susu"
+}

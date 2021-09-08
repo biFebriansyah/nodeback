@@ -106,3 +106,20 @@
 2021-09-08 14:08:05:85 [31merror[39m: [31mpassword authentication failed for user "devdb"[39m
 2021-09-08 14:08:05:85 [31merror[39m: [31mpassword authentication failed for user "devdb"[39m
 2021-09-08 14:08:06:86 [31merror[39m: [31mpassword authentication failed for user "devdb"[39m
+2021-09-08 14:21:14:2114 [31merror[39m: [31mrelation "products" does not exist[39m
+2021-09-08 14:21:15:2115 [31merror[39m: [31mrelation "products" does not exist[39m
+2021-09-08 14:21:15:2115 [31merror[39m: [31mrelation "products" does not exist[39m
+2021-09-08 14:24:25:2425 [31merror[39m: [31mrelation "products" does not exist[39m
+2021-09-08 14:24:25:2425 [31merror[39m: [31mrelation "products" does not exist[39m
+2021-09-08 14:24:26:2426 [31merror[39m: [31mrelation "products" does not exist[39m
+2021-09-08 14:27:44:2744 [31merror[39m: [31mrelation "products" does not exist[39m
+2021-09-08 14:27:45:2745 [31merror[39m: [31mrelation "products" does not exist[39m
+2021-09-08 14:27:45:2745 [31merror[39m: [31mrelation "products" does not exist[39m
+2021-09-08 14:28:41:2841 [31merror[39m: [31mrelation "products" does not exist[39m
+2021-09-08 14:28:41:2841 [31merror[39m: [31mrelation "products" does not exist[39m
+2021-09-08 14:28:42:2842 [31merror[39m: [31mrelation "products" does not exist[39m
+2021-09-08 14:32:16:3216 [31merror[39m: [31minsert or update on table "products" violates foreign key constraint "products_id_categori_fkey"[39m
+2021-09-08 14:35:36:3536 [31merror[39m: [31mUnknown constraint error[39m
+2021-09-08 14:35:44:3544 [31merror[39m: [31mUnknown constraint error[39m
+2021-09-08 14:36:03:363 [31merror[39m: [31mnotNull Violation: categoris.name_categori cannot be null[39m
+2021-09-08 14:36:07:367 [31merror[39m: [31minsert or update on table "products" violates foreign key constraint "products_id_categori_fkey"[39m
