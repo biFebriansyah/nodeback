@@ -1,5 +1,4 @@
 def builderImage
-def CommitHash
 def dockerhub = "bukanebi/backends:devs"
 
 pipeline {
@@ -50,8 +49,29 @@ pipeline {
 
         stage("Deployments") {
             steps {
-                sh "docker-compose up -d" 
+                script {
+                    sshPublisher(
+                        publishers: [
+                            sshPublisherDesc(
+                                configName: 'deploy',
+                                verbose: false,
+                                transfers: [
+                                    sshTransfer(
+                                        execCommand: "docker pull ${dockerhub}; docker kill backend; docker run -d --rm --name backend -p 9000:9000 ${image_name}",
+                                        execTimeout: 120000,
+                                    )
+                                ]
+                            )
+                        ]
+                    )
+
+                }
             }
         }
+        // stage("Deployments") {
+        //     steps {
+        //         sh "docker-compose up -d" 
+        //     }
+        // }
     }
 }
