@@ -1,7 +1,6 @@
 version: "3.9"
 services:
     backends:
-        container_name: backends
         image: bukanebi/backends:devs
         ports:
             - 9000-9002:9000
