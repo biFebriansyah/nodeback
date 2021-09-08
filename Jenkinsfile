@@ -1,6 +1,6 @@
 def builderImage
 def CommitHash
-def dockerhub = "bukanebi/backends"
+def dockerhub = "bukanebi/backends:devs"
 
 pipeline {
     agent any
@@ -25,7 +25,7 @@ pipeline {
         stage("Build Image") {
             steps {
                 script{
-                    builderImage = docker.build("${dockerhub}:devs")          
+                    builderImage = docker.build("${dockerhub}")          
                 }
             }
         }
