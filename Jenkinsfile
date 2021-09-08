@@ -49,8 +49,10 @@ pipeline {
         }
 
         stage("Deployments") {
-            script{
-                builderImage.withRun(" -d --net devnet -p 9000:9000")       
+            steps {
+                script {
+                    builderImage.withRun(" -d --net devnet -p 9000:9000")   
+                }
             }
         }
     }
