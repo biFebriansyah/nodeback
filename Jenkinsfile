@@ -49,8 +49,30 @@ pipeline {
 
         stage('Deployment') {
             steps {
-                sh "docker-compose up -d"
+                script {
+                    sshPublisher(
+                        publishers: [
+                            sshPublisherDesc(
+                                configName: 'deploy',
+                                verbose: false,
+                                transfers: [
+                                    sshTransfer(
+                                        execCommand: "docker pull ${imageName}; docker kill backend; docker run -d --rm --name backend -p 9000:9000 ${imageName}",
+                                        execTimeout: 120000,
+                                    )
+                                ]
+                            )
+                        ]
+                    )
+
+                }
             }
         }
+
+        // stage('Deployment') {
+        //     steps {
+        //         sh "docker-compose up -d"
+        //     }
+        // }
     }
 }
