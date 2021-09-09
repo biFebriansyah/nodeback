@@ -9,5 +9,11 @@ pipeline {
                 }
             }
         }
+
+        stage('Runn Test') {
+            steps {
+                sh "running test"
+            }
+        }
     }
 }
