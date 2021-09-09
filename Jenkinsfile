@@ -12,7 +12,9 @@ pipeline {
 
         stage('Runn Test') {
             steps {
-                sh "running test"
+                nodejs("node14") {
+                    sh 'npm test'
+                }
             }
         }
     }
