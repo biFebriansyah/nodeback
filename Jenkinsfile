@@ -4,6 +4,11 @@ def imageName = "bukanebi/backend:devs"
 pipeline {
     agent any
 
+    parameters {
+        string(name: "nama", defaultValue: "apaaas", description: "for image name")
+        boolenaParam(name: "RUNTEST", defaultValue: "true", description: "for image name")
+    }
+
     stages {
         stage('Installing package') {
             steps {
@@ -14,6 +19,11 @@ pipeline {
         }
 
         stage('Runn Test') {
+
+            when {
+                params.RUNTEST
+            }
+            
             steps {
                 nodejs("node14") {
                     sh 'npm test'
