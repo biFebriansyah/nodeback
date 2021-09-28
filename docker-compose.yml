@@ -1,7 +1,7 @@
 version: "3.9"
 services:
     backend:
-        image: bukanebi/backend:devs
+        image: bukanebi/backends:dev
         ports:
             - 9000:9000
 
