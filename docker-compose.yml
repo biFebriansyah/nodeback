@@ -1,9 +1,12 @@
 version: "3.9"
 services:
     backend:
-        image: bukanebi/backends:dev
+        image: bukanebi/loadtest:dev
         ports:
             - 9000:9000
+        environment:
+            - NEW_RELIC_LICENSE_KEY=1c5eebe1b195c3bad62de324f3aeceaddfe9NRAL
+            - NEW_RELIC_APP_NAME=Node_Service
 
 networks:
     default:

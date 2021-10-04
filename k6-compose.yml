@@ -1,0 +1,9 @@
+version: "3.9"
+services:
+  k6:
+    image: newrelic/nri-statsd:latest
+    ports:
+      - 8125:8125/udp
+    environment:
+      - NR_API_KEY=nr-api-key-here
+      - NR_ACCOUNT_ID=akun-id-here
