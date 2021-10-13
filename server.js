@@ -1,3 +1,4 @@
+require("newrelic")
 const dotenv = require("dotenv")
 const Logger = require("./src/helpers/logger")
 const PORT = 9000

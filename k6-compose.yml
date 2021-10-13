@@ -2,8 +2,17 @@ version: "3.9"
 services:
   k6:
     image: newrelic/nri-statsd:latest
+    restart: unless-stopped
     ports:
       - 8125:8125/udp
     environment:
-      - NR_API_KEY=nr-api-key-here
-      - NR_ACCOUNT_ID=akun-id-here
+      - NR_API_KEY=34355bae8735aec1e1b2d7f6b70e2762FFFFNRAL
+      - NR_ACCOUNT_ID=3299397
+# docker run \
+#   -d --restart unless-stopped \
+#   --name newrelic-statsd \
+#   -h $(hostname) \
+#   -e NR_ACCOUNT_ID=3299397 \
+#   -e NR_API_KEY="NRAK-C4W26TSXAU9CECIK9Y686MXMUZ6" \
+#   -p 8125:8125/udp \
+#   newrelic/nri-statsd:latest
