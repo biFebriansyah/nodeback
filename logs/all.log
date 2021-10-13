@@ -15205,3 +15205,23 @@
 [34m[39m
 2021-10-13 21:22:26:2226 [34mhttp[39m: [34mGET /api/product 200 2955 - 1.066 ms[39m
 [34m[39m
+2021-10-13 21:50:14:5014 [31merror[39m: [31mcould not write init file[39m
+2021-10-13 21:50:59:5059 [31merror[39m: [31mcould not write init file[39m
+2021-10-13 21:52:52:5252 [31merror[39m: [31mcould not write init file[39m
+2021-10-13 21:54:59:5459 [31merror[39m: [31mcould not write init file[39m
+2021-10-13 21:58:53:5853 [31merror[39m: [31mread ECONNRESET[39m
+2021-10-13 21:59:28:5928 [31merror[39m: [31mread ECONNRESET[39m
+2021-10-13 22:00:56:056 [31merror[39m: [31mread ECONNRESET[39m
+2021-10-13 22:57:26:5726 [31merror[39m: [31mpassword authentication failed for user "devops"[39m
+2021-10-13 22:57:51:5751 [32minfo[39m: [32mDatabase connected[39m
+2021-10-13 22:57:51:5751 [32minfo[39m: [32mRedis connected[39m
+2021-10-13 22:57:51:5751 [32minfo[39m: [32mService running on port 9000[39m
+2021-10-13 22:58:04:584 [34mhttp[39m: [34mGET /api/categori/ 200 45 - 1654.988 ms[39m
+[34m[39m
+2021-10-13 22:58:12:5812 [34mhttp[39m: [34mGET /api/product/ 200 45 - 281.135 ms[39m
+[34m[39m
+2021-10-13 22:58:49:5849 [32minfo[39m: [32mDatabase connected[39m
+2021-10-13 22:58:49:5849 [32minfo[39m: [32mRedis connected[39m
+2021-10-13 22:58:49:5849 [32minfo[39m: [32mService running on port 9000[39m
+2021-10-13 22:58:54:5854 [34mhttp[39m: [34mGET /api/product/ 304 - - 293.935 ms[39m
+[34m[39m

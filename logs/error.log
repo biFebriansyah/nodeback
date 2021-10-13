@@ -123,3 +123,11 @@
 2021-09-08 14:35:44:3544 [31merror[39m: [31mUnknown constraint error[39m
 2021-09-08 14:36:03:363 [31merror[39m: [31mnotNull Violation: categoris.name_categori cannot be null[39m
 2021-09-08 14:36:07:367 [31merror[39m: [31minsert or update on table "products" violates foreign key constraint "products_id_categori_fkey"[39m
+2021-10-13 21:50:14:5014 [31merror[39m: [31mcould not write init file[39m
+2021-10-13 21:50:59:5059 [31merror[39m: [31mcould not write init file[39m
+2021-10-13 21:52:52:5252 [31merror[39m: [31mcould not write init file[39m
+2021-10-13 21:54:59:5459 [31merror[39m: [31mcould not write init file[39m
+2021-10-13 21:58:53:5853 [31merror[39m: [31mread ECONNRESET[39m
+2021-10-13 21:59:28:5928 [31merror[39m: [31mread ECONNRESET[39m
+2021-10-13 22:00:56:056 [31merror[39m: [31mread ECONNRESET[39m
+2021-10-13 22:57:26:5726 [31merror[39m: [31mpassword authentication failed for user "devops"[39m
