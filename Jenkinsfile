@@ -5,8 +5,8 @@ pipeline {
     agent any
 
     parameters {
-        string(name: "nama", defaultValue: "apaaas", description: "for image name")
-        boolenaParam(name: "RUNTEST", defaultValue: "true", description: "for image name")
+        string(name: "nama", defaultValue: "bukanebi/backend", description: "for image name")
+        boolenaParam(name: "run testing", defaultValue: "true", description: "for testing")
     }
 
     stages {
@@ -78,11 +78,5 @@ pipeline {
                 }
             }
         }
-
-        // stage('Deployment') {
-        //     steps {
-        //         sh "docker-compose up -d"
-        //     }
-        // }
     }
 }
