@@ -1,4 +1,4 @@
-POST http://localhost:9000/api/product/ HTTP/1.1
+POST http://localhost:9000/api/users/ HTTP/1.1
 content-type: application/json
 
 {
@@ -8,9 +8,12 @@ content-type: application/json
 }
 
 ###
-POST http://localhost:9000/api/categori/ HTTP/1.1
+POST http://localhost:9000/api/users HTTP/1.1
 content-type: application/json
 
 {
-    "name_categori": "susu"
+    "name": "users 1 baru",
+    "username": "users7",
+    "email": "users1@gamil.com",
+    "password": "abcd1234"
 }

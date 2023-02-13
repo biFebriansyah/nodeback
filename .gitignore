@@ -2,3 +2,4 @@ node_modules
 public
 logs
 newrelic_agent.log
+.env

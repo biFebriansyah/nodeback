@@ -1,16 +1,12 @@
-const { Pool } = require("pg")
-const { Sequelize } = require("sequelize")
-
-// if (process.env.NODE_ENV === "test") {
-//     require("dotenv").config()
-// }
+const { Pool } = require('pg')
+const { Sequelize } = require('sequelize')
 
 const pool = new Pool({
     user: process.env.DB_USERS,
     host: process.env.DB_HOST,
     database: process.env.DB_NAME,
     password: process.env.DB_PASS,
-    port: 5432,
+    port: 5432
 })
 
 const orm = new Sequelize({
@@ -19,8 +15,8 @@ const orm = new Sequelize({
     password: process.env.DB_PASS,
     host: process.env.DB_HOST,
     port: 5432,
-    dialect: "postgres",
-    logging: false,
+    dialect: 'postgres',
+    logging: false
 })
 
 module.exports = { pool, orm }
