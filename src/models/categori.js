@@ -1,49 +1,28 @@
-const { orm } = require("../configs/db")
-const { DataTypes } = require("sequelize")
+const db = require('../database/sequalize/models/categori')
+const models = {}
 
-class Categori {
-    constructor() {
-        this.table = orm.define("categoris", {
-            id: {
-                type: DataTypes.INTEGER,
-                allowNull: false,
-                autoIncrement: true,
-                primaryKey: true,
-            },
-            name_categori: {
-                type: DataTypes.STRING,
-                allowNull: false,
-            },
-        })
-    }
-
-    Save(data) {
-        return new Promise((resolve, reject) => {
-            this.table
-                .create(data)
-                .then((res) => {
-                    resolve(res.toJSON())
-                })
-                .catch((err) => {
-                    reject(err)
-                })
-        })
-    }
-
-    GetAll() {
-        return new Promise((resolve, reject) => {
-            this.table
-                .findAll({
-                    order: [["createdAt", "DESC"]],
-                })
-                .then((res) => {
-                    resolve(res)
-                })
-                .catch((err) => {
-                    reject(err)
-                })
-        })
-    }
+models.Create = (data) => {
+    return new Promise((resolve, reject) => {
+        db.create(data)
+            .then((res) => {
+                resolve(res.toJSON())
+            })
+            .catch((err) => {
+                reject(err)
+            })
+    })
 }
 
-module.exports = new Categori()
+models.GetAll = () => {
+    return new Promise((resolve, reject) => {
+        db.findAll({ order: [['createdAt', 'DESC']] })
+            .then((res) => {
+                resolve(res)
+            })
+            .catch((err) => {
+                reject(err)
+            })
+    })
+}
+
+module.exports = models

@@ -1,23 +1,22 @@
-const redis = require("redis")
+const redis = require('redis')
 
 class Redis {
     constructor() {
         this.redisDb = redis.createClient({
             host: process.env.REDIS_HOST,
-            port: 6379,
-            password: process.env.REDIS_PASS,
+            port: 6379
         })
     }
 
     check() {
         return new Promise((resolve, reject) => {
-            this.redisDb.get("testkey", (err, res) => {
+            this.redisDb.get('testkey', (err, res) => {
                 if (err) {
                     reject(err)
                 }
 
-                if (res === "OK" || res === null) {
-                    resolve("Connection to redis successfully")
+                if (res === 'OK' || res === null) {
+                    resolve('Connection to redis successfully')
                 }
             })
         })

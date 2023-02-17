@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "ES5",
+    "baseUrl": ".",
+    "paths": {
+        "@db/*": ["./src/database/sequalize/*"],
+        "@conf/*": ["./src/configs/*"]
+    }
+  },
+  "exclude": ["node_modules"],
+  "include": ["src/**/*"]
+}

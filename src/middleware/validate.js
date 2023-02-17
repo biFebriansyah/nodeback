@@ -1,20 +1,22 @@
-const respone = require("../helpers/respone")
-const jwt = require("jsonwebtoken")
+const respone = require('../helpers/respone')
+const jwt = require('jsonwebtoken')
 
 const checkToken = (role) => {
     return (req, res, next) => {
-        const { tokenauth } = req.headers
+        const { Authorization } = req.headers
 
-        if (process.env.NODE_ENV === "test") {
+        if (process.env.NODE_ENV === 'test') {
             next()
             return
         }
 
-        if (!tokenauth) {
-            return respone(res, 401, { msg: "Login dlu" })
+        if (!Authorization) {
+            return respone(res, 401, { msg: 'Login dlu' })
         }
 
-        jwt.verify(tokenauth, process.env.JWT_KEYS, (err, decode) => {
+        const bearerToken = Authorization.split(' ')[1]
+
+        jwt.verify(bearerToken, process.env.JWT_KEYS, (err, decode) => {
             if (err) {
                 return respone(res, 401, err)
             }
@@ -22,7 +24,7 @@ const checkToken = (role) => {
             if (decode.role === role) {
                 next()
             } else {
-                return respone(res, 401, { msg: "akess tidak dizinkan" })
+                return respone(res, 401, { msg: 'akess tidak dizinkan' })
             }
         })
     }
