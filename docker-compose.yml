@@ -7,7 +7,7 @@ services:
         environment:
             - NEW_RELIC_LICENSE_KEY=1c5eebe1b195c3bad62de324f3aeceaddfe9NRAL
             - NEW_RELIC_APP_NAME=Node_Service
-
+            
 networks:
     default:
         external: true
